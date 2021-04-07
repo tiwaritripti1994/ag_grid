@@ -1,0 +1,53 @@
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+/* You can add global styles to this file, and also import other style files */
+$white : #fff;
+$uppercase: uppercase;
+$relative: relative;
+
+.white{
+  color:$white;
+}
+
+.uppercase{
+  text-transform: $uppercase;
+}
+
+// .header_img{
+//   height: 50px ;
+//   width: 46px ;
+// }
+
+.svg_icon{
+  fill:$white;
+}
+
+.user{
+  position: $relative;
+  left:70%;
+  height: 40px ;
+  width: 46px ;
+}
+.setting{
+  position: $relative;
+  left:68%;
+  height: 30px ;
+  width: 46px ;
+}
+.user_name{
+  position: $relative;
+  left:60%;
+}
+.vl {
+  border-left: 3px solid $white;
+  height: 40px;
+  position: $relative;
+  left:65%;
+}
+.sidemenu_icon{
+  height: 25px;
+}
+.mat-expansion-panel-body{
+  padding: unset !important;
+}

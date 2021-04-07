@@ -1,0 +1,108 @@
+<mat-toolbar>
+  <img src="./assets/Momentum-logo.svg" >
+  <span class="white uppercase pl-4">Momemtum</span>
+  <span class="white user_name">Welcome Ganesh</span> 
+  <div class="vl"></div>
+  <img src="./assets/Setup.svg" class="setting">
+  <img src="./assets/account_circle-black-24dp.svg" class="user">
+</mat-toolbar>
+<br>
+<div class="main-body">
+<div class="sidebar" [ngClass]="{'sidebar': isExpanded, 'sidebarmini': !isExpanded}">
+<mat-sidenav-container class="example-container" autosize>
+  <br> 
+  <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" >
+    <mat-nav-list>
+      <mat-list-item >
+        <img [src]="arrowsrc" (click)="isExpanded = !isExpanded;getsrc();" class="float-right"
+        [ngClass]="{'right': isExpanded, 'float-left': !isExpanded}" >
+      </mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <img src="./assets/Dashboard.svg" class="sidemenu_icon icon_left">
+        <span class="full-width white text_left" *ngIf="isExpanded || isShowing">Dashboard</span>
+      </mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <img src="./assets/Reconciliation.svg" class="sidemenu_icon icon_left">
+        <span class="full-width white text_left" *ngIf="isExpanded || isShowing">Menu Item 1</span>
+      </mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <img src="./assets/File Status.svg" class="sidemenu_icon icon_left">
+        <span class="full-width white text_left" *ngIf="isExpanded || isShowing">Menu Item 2</span>
+      </mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <img src="./assets/Support.svg" class="sidemenu_icon icon_left">
+        <span class="full-width white text_left" *ngIf="isExpanded || isShowing">Menu Item 3</span>
+      </mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <img src="./assets/Help.svg" class="sidemenu_icon icon_left">
+        <span class="full-width white text_left" *ngIf="isExpanded || isShowing">Help</span>
+      </mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+        <img src="./assets/Reports.svg" class="sidemenu_icon icon_left">
+        <span class="full-width white text_left" *ngIf="isExpanded || isShowing">Reports</span>
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-nav-list>
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>
+</div>
+
+
+
+<div class="main-content">
+<mat-accordion>
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+         Accordian Momentum One    
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+      <ag-grid-angular
+      style="width: 1200px; height: 500px;"
+      class="ag-theme-alpine"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+    >
+    </ag-grid-angular> 
+  </mat-expansion-panel>
+  
+</mat-accordion>
+<br/>
+<mat-accordion>
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+         Accordian Momentum Two    
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+      <ag-grid-angular
+      style="width: 1200px; height: 500px;"
+      class="ag-theme-alpine"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+    >
+    </ag-grid-angular> 
+  </mat-expansion-panel>
+  
+</mat-accordion>
+<br/>
+<mat-accordion>
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+         Accordian Momentum Three    
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+      <ag-grid-angular
+      style="width: 1200px; height: 500px;"
+      class="ag-theme-alpine"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+    >
+    </ag-grid-angular> 
+  </mat-expansion-panel>
+  
+</mat-accordion>
+</div>
+</div>

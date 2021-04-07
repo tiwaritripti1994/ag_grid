@@ -1,0 +1,81 @@
+
+mat-toolbar {
+  background: linear-gradient(to right,#052950 30% , #094b68 80% , #107e8a 100%);
+}
+
+mat-sidenav-container{
+  background: linear-gradient(to right,#052950 30% , #094b68 80% , #107e8a 100%); 
+}
+
+.example-container {
+  height: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  overflow: none;
+}
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.example-sidenav {
+   user-select: none;
+}
+.full-width {
+  width: 100%;
+}
+.menu-button {
+  transition: 300ms ease-in-out;
+  transform: rotate(0deg);
+}
+.menu-button.rotated {
+  transform: rotate(180deg);
+}
+.submenu {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+  padding-left: 30px;
+}
+.submenu.expanded {
+  transform: scaleY(1);
+}
+.sidebar{
+  width: 270px;
+}
+.sidebarmini{
+  width: 84px;
+}
+button{
+  background: #052950;
+}
+mat-expansion-panel-header,mat-expansion-panel{
+  background: #052950;
+  color:white;
+}
+.mat-drawer{
+  overflow: unset !important;
+}
+.mat-drawer-inner-container{
+  overflow: unset !important;
+}
+.icon_left{
+  padding-left: 33px;
+}
+.text_left{
+  padding-left: 22px;
+}
+.float-right{
+  padding-left: 90%;
+}
+.float-left{
+  padding-left: 33px !important;
+}
+.main-body{
+  display: flex;
+}
+.main-content{
+  padding-left: 2%;
+}
