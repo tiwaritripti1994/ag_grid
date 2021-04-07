@@ -5,7 +5,7 @@
 $white : #fff;
 $uppercase: uppercase;
 $relative: relative;
-
+$blue:#0985C7;
 .white{
   color:$white;
 }
@@ -50,4 +50,14 @@ $relative: relative;
 }
 .mat-expansion-panel-body{
   padding: unset !important;
+}
+.save{
+  color: $white;
+  width: 211px;
+  height:40px;
+  background: $blue !important;
+  border:$blue ;
+}
+.ag-body-horizontal-scroll-viewport{
+  overflow: hidden;
 }

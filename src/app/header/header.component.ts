@@ -15,7 +15,12 @@ export class HeaderComponent implements OnInit {
   
   
   columnDefs = [
-      {headerName: 'Description', field: 'description' },
+      {headerName: 'Description', field: 'description', cellStyle: params => {
+        if (params.value != null) {
+            return {color: '#0985C7'};
+        }
+        return null;
+    } },
       {headerName: 'Instruction Type', field: 'instruction'},
       {headerName: 'Record Info.',field: 'record'},
       {headerName: 'Final Source $', field: 'final'},
@@ -27,7 +32,14 @@ export class HeaderComponent implements OnInit {
   rowData = [
       { description: 'MOMENTUM CAPITAL', instruction: 'Equity', record:'1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
       { description: 'MOMENTUM CAPITAL', instruction: 'IR_FUTURE', record: '1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
-      { description: 'MOMENTUM CAPITAL', instruction: 'Equity', record: '1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' }
+      { description: 'MOMENTUM CAPITAL', instruction: 'Equity', record: '1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
+      { description: 'MOMENTUM CAPITAL', instruction: 'Equity', record:'1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
+      { description: 'MOMENTUM CAPITAL', instruction: 'IR_FUTURE', record: '1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
+      { description: 'MOMENTUM CAPITAL', instruction: 'Equity', record: '1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
+      { description: 'MOMENTUM CAPITAL', instruction: 'Equity', record:'1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
+      { description: 'MOMENTUM CAPITAL', instruction: 'IR_FUTURE', record: '1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
+      { description: 'MOMENTUM CAPITAL', instruction: 'Equity', record: '1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
+      
   ];
   
   constructor() { }
