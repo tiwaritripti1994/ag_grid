@@ -39,7 +39,6 @@ export class HeaderComponent implements OnInit {
       { description: 'MOMENTUM CAPITAL', instruction: 'Equity', record:'1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
       { description: 'MOMENTUM CAPITAL', instruction: 'IR_FUTURE', record: '1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
       { description: 'MOMENTUM CAPITAL', instruction: 'Equity', record: '1', final: '31,600.47', base: '1,704.91', comments: 'Dolores ispum' },
-      
   ];
   
   constructor() { }
